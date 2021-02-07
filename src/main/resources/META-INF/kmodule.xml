@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kmodule
+        xmlns="http://www.drools.org/xsd/kmodule">
+
+    <kbase name="GTIKBase" packages="rules">
+        <ksession name="IfContainsEPrepend0KS"/>
+        <ksession name="InstallationMaintenanceKS"/>
+    </kbase>
+
+</kmodule>

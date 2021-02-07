@@ -1,0 +1,15 @@
+package rules;
+
+import org.slf4j.Logger;
+import com.github.msalaslo.streamedrules.drools.Message;
+
+//declare any global variables here
+global org.slf4j.Logger logger;
+
+rule "If Contains E Prepend 0"
+when
+    message: Message (content contains 'e') or message: Message (content contains 'E')
+then
+	logger.info("message contains e");
+    message.setContent("0"+message.getContent());
+end

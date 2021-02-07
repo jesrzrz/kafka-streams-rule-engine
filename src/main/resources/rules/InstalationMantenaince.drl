@@ -1,0 +1,27 @@
+package rules;
+
+import org.slf4j.Logger;
+import com.github.msalaslo.streamedrules.drools.Incidence;
+
+//declare any global variables here
+global org.slf4j.Logger logger;
+
+rule "Installation Maintenance R1"
+when
+    incidence: Incidence (type == 'SS', param1 == 'ALTO', param2 == 'FG', param3 <= 30 , param4 == false)
+then
+	logger.info("incidence type GARA");
+    incidence.setCallType("GARA");
+    incidence.setObservations("GTI:Fall");
+    incidence.setProblem("GZVS");
+end
+
+rule "Installation Maintenance R2"
+when
+    incidence: Incidence (type == 'SS', param1 == 'ALTO', param2 == 'FG', param3 <= 30 , param4 == true)
+then
+	logger.info("incidence type TECN");
+    incidence.setCallType("TECN");
+    incidence.setObservations("GTI:Fall");
+    incidence.setProblem("ZVSU");
+end
