@@ -56,3 +56,5 @@ hs_err_pid*
 /.classpath
 
 target/
+/.factorypath
+/.settings
