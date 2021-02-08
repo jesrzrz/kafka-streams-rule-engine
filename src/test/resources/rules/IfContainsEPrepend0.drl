@@ -1,6 +1,6 @@
 package com.github.msalaslo.streamedrules;
 
-import com.github.msalaslo.streamedrules.drools.Message;
+import com.github.msalaslo.streamedrules.model.Message;
 
 rule "If Contains E Prepend 0"
 when

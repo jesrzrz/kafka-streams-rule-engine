@@ -1,7 +1,7 @@
 package rules;
 
 import org.slf4j.Logger;
-import com.github.msalaslo.streamedrules.drools.Incidence;
+import com.github.msalaslo.streamedrules.model.Incidence;
 
 //declare any global variables here
 global org.slf4j.Logger logger;
@@ -12,7 +12,7 @@ when
 then
 	logger.info("incidence type GARA");
     incidence.setCallType("GARA");
-    incidence.setObservations("GTI:Fall");
+    incidence.setObservations("GTI:Sustituir Canula");
     incidence.setProblem("GZVS");
 end
 
@@ -22,6 +22,6 @@ when
 then
 	logger.info("incidence type TECN");
     incidence.setCallType("TECN");
-    incidence.setObservations("GTI:Fall");
+    incidence.setObservations("GTI:Sustituir Canula");
     incidence.setProblem("ZVSU");
 end

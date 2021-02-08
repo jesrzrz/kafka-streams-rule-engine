@@ -7,6 +7,8 @@ import org.kie.api.KieServices;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 
+import com.github.msalaslo.streamedrules.model.Message;
+
 public class DroolsSessionFactoryTest {
 
     @Test

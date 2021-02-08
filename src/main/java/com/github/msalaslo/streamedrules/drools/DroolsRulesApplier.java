@@ -4,6 +4,9 @@ import org.kie.api.KieServices;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 
+import com.github.msalaslo.streamedrules.model.Incidence;
+import com.github.msalaslo.streamedrules.model.Message;
+
 import lombok.extern.slf4j.Slf4j;
 
 /**

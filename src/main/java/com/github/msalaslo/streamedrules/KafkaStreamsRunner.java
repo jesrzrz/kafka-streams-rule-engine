@@ -14,7 +14,7 @@ import org.springframework.kafka.support.serializer.JsonSerde;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.msalaslo.streamedrules.drools.DroolsRulesApplier;
-import com.github.msalaslo.streamedrules.drools.Incidence;
+import com.github.msalaslo.streamedrules.model.Incidence;
 
 /**
  * Runs the Kafka Streams job.

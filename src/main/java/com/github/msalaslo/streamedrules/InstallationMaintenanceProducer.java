@@ -14,7 +14,7 @@ import org.springframework.kafka.support.serializer.JsonSerde;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.msalaslo.streamedrules.configuration.PropertiesUtil;
-import com.github.msalaslo.streamedrules.drools.Incidence;
+import com.github.msalaslo.streamedrules.model.Incidence;
 
 
 public class InstallationMaintenanceProducer {
@@ -46,14 +46,14 @@ public class InstallationMaintenanceProducer {
 		
 		Producer<String, Incidence> producer = new KafkaProducer<String, Incidence>(props);
 
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < 1; i++) {
 			Incidence incidence = Incidence.builder().
 					id(""+ i).
 					type("SS").
 					param1("ALTO").
 					param2("FG").
 					param3(29).
-					param4(true).
+					param4(false).
 					build();
 			
 			producer.send(new ProducerRecord<String, Incidence>(topicName, incidence.getId(), incidence));

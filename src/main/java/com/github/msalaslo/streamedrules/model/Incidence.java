@@ -1,4 +1,4 @@
-package com.github.msalaslo.streamedrules.drools;
+package com.github.msalaslo.streamedrules.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
